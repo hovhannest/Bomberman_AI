@@ -1,0 +1,195 @@
+#<mapfile>
+
+name Map  1
+player 0 0
+door 1 11
+size 20 25
+
+enemy_range hard 10
+enemy_range medium 7
+enemy_range easy 4
+
+enemy_speed hard 500
+enemy_speed medium 750
+enemy_speed easy 1250
+
+enemy easy 11 2
+enemy medium 0 8
+enemy hard 13 12
+
+# Items
+item extra_bomb 0 1
+item increase_range 5 2
+item remote 2 0
+
+# Common bricks
+single common_brick 1 10
+block common_brick 1 13 1 15
+block common_brick 1 17 1 19
+single common_brick 1 24
+block common_brick 1 3 1 9
+single common_brick 2 24
+single common_brick 2 3
+single common_brick 3 3
+single common_brick 3 7
+single common_brick 4 1
+single common_brick 4 10
+single common_brick 4 16
+single common_brick 4 3
+single common_brick 4 7
+single common_brick 4 8
+single common_brick 4 9
+single common_brick 5 1
+single common_brick 5 21
+single common_brick 5 3
+single common_brick 6 1
+block common_brick 6 18 6 24
+single common_brick 7 1
+single common_brick 7 11
+single common_brick 7 18
+single common_brick 7 19
+single common_brick 7 20
+single common_brick 7 21
+single common_brick 7 22
+single common_brick 7 23
+single common_brick 7 24
+single common_brick 7 4
+single common_brick 7 8
+single common_brick 8 1
+single common_brick 8 11
+single common_brick 8 13
+single common_brick 8 3
+single common_brick 8 8
+single common_brick 9 1
+single common_brick 9 15
+single common_brick 9 16
+single common_brick 9 17
+single common_brick 9 18
+single common_brick 9 19
+single common_brick 9 3
+single common_brick 10 1
+single common_brick 10 10
+single common_brick 10 11
+single common_brick 10 23
+single common_brick 10 3
+single common_brick 10 8
+single common_brick 10 9
+single common_brick 11 1
+single common_brick 11 11
+single common_brick 11 15
+single common_brick 11 16
+single common_brick 11 19
+single common_brick 12 10
+single common_brick 12 11
+single common_brick 12 24
+single common_brick 12 3
+single common_brick 12 8
+single common_brick 12 9
+single common_brick 13 14
+single common_brick 13 17
+single common_brick 13 18
+single common_brick 13 20
+single common_brick 13 3
+single common_brick 13 5
+single common_brick 14 1
+single common_brick 14 20
+single common_brick 14 23
+single common_brick 14 3
+single common_brick 14 5
+single common_brick 15 1
+single common_brick 15 11
+single common_brick 15 15
+single common_brick 15 22
+single common_brick 15 23
+single common_brick 15 24
+single common_brick 15 5
+single common_brick 16 1
+single common_brick 16 3
+single common_brick 16 5
+single common_brick 17 1
+single common_brick 17 10
+single common_brick 17 12
+single common_brick 17 17
+single common_brick 17 18
+single common_brick 17 3
+single common_brick 17 5
+single common_brick 18 0
+single common_brick 18 10
+single common_brick 18 12
+single common_brick 18 3
+single common_brick 18 5
+single common_brick 19 0
+single common_brick 19 10
+single common_brick 19 12
+single common_brick 19 15
+single common_brick 19 16
+single common_brick 19 17
+single common_brick 19 20
+single common_brick 19 21
+single common_brick 19 22
+single common_brick 19 23
+single common_brick 19 24
+single common_brick 19 3
+single common_brick 19 5
+
+# Destructible bricks
+block destruct_brick 1 0 1 1
+single destruct_brick 1 11
+single destruct_brick 1 12
+single destruct_brick 1 21
+single destruct_brick 1 22
+single destruct_brick 2 21
+single destruct_brick 2 22
+single destruct_brick 4 11
+single destruct_brick 4 12
+single destruct_brick 4 13
+single destruct_brick 4 14
+single destruct_brick 4 18
+single destruct_brick 4 19
+single destruct_brick 5 4
+single destruct_brick 5 5
+single destruct_brick 5 6
+single destruct_brick 5 7
+single destruct_brick 7 3
+single destruct_brick 9 22
+single destruct_brick 10 20
+single destruct_brick 10 22
+single destruct_brick 10 4
+single destruct_brick 10 5
+single destruct_brick 10 6
+single destruct_brick 11 13
+single destruct_brick 11 17
+single destruct_brick 11 18
+single destruct_brick 11 22
+single destruct_brick 12 1
+single destruct_brick 12 13
+single destruct_brick 12 22
+single destruct_brick 12 4
+single destruct_brick 12 5
+single destruct_brick 12 6
+single destruct_brick 13 1
+single destruct_brick 13 13
+single destruct_brick 13 22
+single destruct_brick 13 8
+single destruct_brick 14 19
+single destruct_brick 14 22
+single destruct_brick 15 10
+single destruct_brick 15 12
+single destruct_brick 15 13
+single destruct_brick 15 14
+single destruct_brick 15 16
+single destruct_brick 15 17
+single destruct_brick 15 3
+single destruct_brick 15 8
+single destruct_brick 15 9
+single destruct_brick 16 20
+single destruct_brick 17 13
+single destruct_brick 17 14
+single destruct_brick 17 20
+single destruct_brick 17 22
+single destruct_brick 17 7
+single destruct_brick 17 8
+single destruct_brick 17 9
+single destruct_brick 18 20
+single destruct_brick 18 22
+single destruct_brick 19 19

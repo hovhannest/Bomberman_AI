@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<map width="25" height="20">
+	<name>map 1</name>
+	
+	<player>
+		<position column="0" row="0" />
+	</player>
+	
+	<bricks>
+		<!-- column 0 -->
+		<brick column="0" row="1" destructible="true"/>
+		<brick column="0" row="18" />
+		<brick column="0" row="19" />
+		
+		<!-- column 1 -->
+		<brick column="1" row="1" destructible="true"/>
+		<brick column="1" row="4" />
+		<brick column="1" row="5" />
+		<brick column="1" row="6" />
+		<brick column="1" row="7" />
+		<brick column="1" row="8" />
+		<brick column="1" row="9" />
+		<brick column="1" row="10" />
+		<brick column="1" row="11" />
+		<brick column="1" row="12" destructible="true"/>
+		<brick column="1" row="13" destructible="true"/>
+		<brick column="1" row="14" />
+		<brick column="1" row="15" />
+		<brick column="1" row="16" />
+		<brick column="1" row="17" />
+		
+		<!-- column 2 -->
+		
+		<!-- column 3 -->
+		<brick column="3" row="1" />
+		<brick column="3" row="2" />
+		<brick column="3" row="3" />
+		<brick column="3" row="4" />
+		<brick column="3" row="5" />
+		<brick column="3" row="7" destructible="true"/>
+		<brick column="3" row="8" />
+		<brick column="3" row="9" />
+		<brick column="3" row="10" />
+		<brick column="3" row="12" />
+		<brick column="3" row="13" />
+		<brick column="3" row="14" />
+		<brick column="3" row="15" destructible="true"/>
+		<brick column="3" row="16" />
+		<brick column="3" row="17" />
+		<brick column="3" row="18" />
+		<brick column="3" row="19" />
+		
+		<!-- column 4 -->
+		<brick column="4" row="1" />
+		<brick column="4" row="5" destructible="true"/>
+		<brick column="4" row="7" />
+		<brick column="4" row="10" destructible="true"/>
+		<brick column="4" row="12" destructible="true"/>
+		
+		<!-- column 5 -->
+		<brick column="5" row="1" />
+		<brick column="5" row="5" destructible="true"/>
+		<brick column="5" row="10" destructible="true"/>
+		<brick column="5" row="12" destructible="true"/>
+		<brick column="5" row="13" />
+		<brick column="5" row="14" />
+		<brick column="5" row="15" />
+		<brick column="5" row="16" />
+		<brick column="5" row="17" />
+		<brick column="5" row="18" />
+		<brick column="5" row="19" />
+		
+		<!-- column 6 -->
+		<brick column="6" row="1" />
+		<brick column="6" row="5" destructible="true"/>
+		<brick column="6" row="10" destructible="true"/>
+		<brick column="6" row="12" destructible="true"/>
+		
+		<!-- column 7 -->
+		<brick column="7" row="1" />
+		<brick column="7" row="3" />
+		<brick column="7" row="4" />
+		<brick column="7" row="5" destructible="true"/>
+		<brick column="7" row="17" destructible="true"/>
+		
+		<!-- column 8 -->
+		<brick column="8" row="1" />
+		<brick column="8" row="4" />
+		<brick column="8" row="7" />
+		<brick column="8" row="8" />
+		<brick column="8" row="10" />
+		<brick column="8" row="12" />
+		<brick column="8" row="13" destructible="true"/>
+		<brick column="8" row="15" destructible="true"/>
+		<brick column="8" row="17" destructible="true"/>
+		
+		<!-- column 9 -->
+		<brick column="9" row="1" />
+		<brick column="9" row="4" />
+		<brick column="9" row="10" />
+		<brick column="9" row="12" />
+		<brick column="9" row="15" destructible="true"/>
+		<brick column="9" row="17" destructible="true"/>
+		
+		<!-- column 10 -->
+		<brick column="10" row="1" />
+		<brick column="10" row="4" />
+		<brick column="10" row="10" />
+		<brick column="10" row="12" />
+		<brick column="10" row="15" destructible="true"/>
+		<brick column="10" row="17" />
+		<brick column="10" row="18" />
+		<brick column="10" row="19" />
+		
+		<!-- column 11 -->
+		<brick column="11" row="1" destructible="true"/>
+		<brick column="11" row="4" destructible="true"/>
+		<brick column="11" row="7" />
+		<brick column="11" row="8" />
+		<brick column="11" row="10" />
+		<brick column="11" row="11" />
+		<brick column="11" row="12" />
+		<brick column="11" row="15" />
+		
+		<!-- column 12 -->
+		<brick column="12" row="1" destructible="true"/>
+		<brick column="12" row="4" destructible="true"/>
+		<brick column="12" row="15" destructible="true"/>
+		<brick column="12" row="17" />
+		<brick column="12" row="18" />
+		<brick column="12" row="19" />
+		
+		<!-- column 13 -->
+		<brick column="13" row="1" />
+		<brick column="13" row="4" destructible="true"/>
+		<brick column="13" row="8" />
+		<brick column="13" row="11" destructible="true"/>
+		<brick column="13" row="12" destructible="true"/>
+		<brick column="13" row="13" destructible="true"/>
+		<brick column="13" row="15" destructible="true"/>
+		<brick column="13" row="17" destructible="true"/>
+		
+		<!-- column 14 -->
+		<brick column="14" row="1" />
+		<brick column="14" row="4" destructible="true"/>
+		<brick column="14" row="13" />
+		<brick column="14" row="15" destructible="true"/>
+		<brick column="14" row="17" destructible="true"/>
+		
+		<!-- column 15 -->
+		<brick column="15" row="1" />
+		<brick column="15" row="9" />
+		<brick column="15" row="11" />
+		<brick column="15" row="15" />
+		<brick column="15" row="19" />
+		
+		<!-- column 16 -->
+		<brick column="16" row="4" />
+		<brick column="16" row="9" />
+		<brick column="16" row="11" />
+		<brick column="16" row="15" destructible="true"/>
+		<brick column="16" row="19" />
+		
+		<!-- column 17 -->
+		<brick column="17" row="1" />
+		<brick column="17" row="9" />
+		<brick column="17" row="11" destructible="true"/>
+		<brick column="17" row="13" />
+		<brick column="17" row="15" destructible="true"/>
+		<brick column="17" row="17" />
+		<brick column="17" row="19" />
+		
+		<!-- column 18 -->
+		<brick column="18" row="1" />
+		<brick column="18" row="4" destructible="true"/>
+		<brick column="18" row="6" />
+		<brick column="18" row="7" />
+		<brick column="18" row="9" />
+		<brick column="18" row="11" destructible="true"/>
+		<brick column="18" row="13" />
+		<brick column="18" row="17" />
+		
+		<!-- column 19 -->
+		<brick column="19" row="1" />
+		<brick column="19" row="4" destructible="true"/>
+		<brick column="19" row="6" />
+		<brick column="19" row="7" />
+		<brick column="19" row="9" />
+		<brick column="19" row="11" />
+		<brick column="19" row="14" destructible="true"/>
+		<brick column="19" row="19" destructible="true"/>
+		
+		<!-- column 20 -->
+		<brick column="20" row="6" />
+		<brick column="20" row="7" />
+		<brick column="20" row="10" destructible="true"/>
+		<brick column="20" row="13" />
+		<brick column="20" row="14" />
+		<brick column="20" row="16" destructible="true"/>
+		<brick column="20" row="17" destructible="true"/>
+		<brick column="20" row="18" destructible="true"/>
+		<brick column="20" row="19" />
+		
+		<!-- column 21 -->
+		<brick column="21" row="1" destructible="true"/>
+		<brick column="21" row="2" destructible="true"/>
+		<brick column="21" row="5" />
+		<brick column="21" row="6" />
+		<brick column="21" row="7" />
+		<brick column="21" row="19" />
+		
+		<!-- column 22 -->
+		<brick column="22" row="1" destructible="true"/>
+		<brick column="22" row="2" destructible="true"/>
+		<brick column="22" row="6" />
+		<brick column="22" row="7" />
+		<brick column="22" row="9" destructible="true"/>
+		<brick column="22" row="10" destructible="true"/>
+		<brick column="22" row="11" destructible="true"/>
+		<brick column="22" row="12" destructible="true"/>
+		<brick column="22" row="13" destructible="true"/>
+		<brick column="22" row="14" destructible="true"/>
+		<brick column="22" row="15" />
+		<brick column="22" row="17" destructible="true"/>
+		<brick column="22" row="18" destructible="true"/>
+		<brick column="22" row="19" />
+		
+		<!-- column 23 -->
+		<brick column="23" row="6" />
+		<brick column="23" row="7" />
+		<brick column="23" row="10" />
+		<brick column="23" row="14" />
+		<brick column="23" row="15" />
+		<brick column="23" row="19" />
+		
+		<!-- column 24 -->
+		<brick column="24" row="1" />
+		<brick column="24" row="2" />
+		<brick column="24" row="6" />
+		<brick column="24" row="7" />
+		<brick column="24" row="12" />
+		<brick column="24" row="15" />
+		<brick column="24" row="19" />
+	</bricks>
+</map>

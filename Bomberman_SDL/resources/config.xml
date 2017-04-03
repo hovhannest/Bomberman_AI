@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<configuration>
+	<viewport>
+		<title>Bomberman</title>
+		<width>800</width>
+		<height>600</height>
+	</viewport>
+	
+	<loggers>
+		<logger>stdout</logger>
+	</loggers>
+    
+    <start_map>
+        map1.txt
+    </start_map>
+</configuration>

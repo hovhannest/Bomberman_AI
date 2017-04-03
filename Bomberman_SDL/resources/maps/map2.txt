@@ -1,0 +1,50 @@
+#<mapfile>
+
+name Map 2
+player 1 1
+door 9 4
+size 18 12
+
+# enemies
+enemy medium 5 8
+enemy easy 16 1
+enemy easy 15 7
+enemy hard 11 10
+
+# items
+item increase_range 9 3
+item extra_bomb 1 10
+item extra_bomb 5 10
+item increase_range 11 1
+item remote 13 10
+
+# Horizontal borders
+horizontal_line common_brick 0 0 18
+horizontal_line common_brick 0 11 18
+
+# Vertical borders
+vertical_line common_brick 0 1 10
+vertical_line common_brick 17 1 10
+
+# Cage
+horizontal_line common_brick 1 4 8
+vertical_line common_brick 10 1 4
+single destruct_brick 9 4
+
+# Bars
+vertical_line common_brick 2 10 -5
+vertical_line common_brick 4 10 -5
+vertical_line common_brick 6 10 -5
+vertical_line common_brick 8 10 -5
+vertical_line common_brick 10 10 -5
+
+# Laberynth
+single destruct_brick 12 1
+vertical_line common_brick 12 2 5
+single destruct_brick 16 8
+single common_brick 14 1
+single destruct_brick 14 2
+vertical_line common_brick 14 7 -5
+vertical_line common_brick 12 10 -2
+horizontal_line common_brick 12 8 4
+    

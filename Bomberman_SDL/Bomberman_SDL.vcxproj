@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Color.cpp" />
     <ClCompile Include="Core\CommandQueue.cpp" />
     <ClCompile Include="Core\Engine.cpp" />
+    <ClCompile Include="Core\Font.cpp" />
     <ClCompile Include="Core\Log\Log.cpp" />
     <ClCompile Include="Core\Log\LoggerFactory.cpp" />
     <ClCompile Include="Core\Log\LogLevel.cpp" />
@@ -31,18 +33,38 @@
     <ClCompile Include="Core\Math\Transformer.cpp" />
     <ClCompile Include="Core\Screen.cpp" />
     <ClCompile Include="Core\ScreenComponent.cpp" />
+    <ClCompile Include="Core\Texture.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
     <ClCompile Include="Core\Utils\OperatingSystem.cpp" />
     <ClCompile Include="Core\Utils\StringUtils.cpp" />
+    <ClCompile Include="Game\CommandFactory.cpp" />
+    <ClCompile Include="Game\Commands\GameOverCommand.cpp" />
+    <ClCompile Include="Game\Commands\PlayerCommand.cpp" />
     <ClCompile Include="Game\Configuration.cpp" />
+    <ClCompile Include="Game\Console.cpp" />
+    <ClCompile Include="Game\Console\First.cpp" />
+    <ClCompile Include="Game\Console\Parser.cpp" />
+    <ClCompile Include="Game\Console\Token.cpp" />
+    <ClCompile Include="Game\Console\TokenFactory.cpp" />
+    <ClCompile Include="Game\Elements\Bomb.cpp" />
+    <ClCompile Include="Game\Elements\Enemy.cpp" />
+    <ClCompile Include="Game\Elements\Explosion.cpp" />
+    <ClCompile Include="Game\Elements\Item.cpp" />
+    <ClCompile Include="Game\Elements\Player.cpp" />
+    <ClCompile Include="Game\Layers\ConsoleLayer.cpp" />
     <ClCompile Include="Game\main.cpp" />
+    <ClCompile Include="Game\Map\TileMap.cpp" />
+    <ClCompile Include="Game\Signal.cpp" />
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\Color.h" />
     <ClInclude Include="Core\Command.h" />
     <ClInclude Include="Core\CommandQueue.h" />
     <ClInclude Include="Core\Drawable.h" />
     <ClInclude Include="Core\Engine.h" />
     <ClInclude Include="Core\EventListener.h" />
+    <ClInclude Include="Core\Font.h" />
     <ClInclude Include="Core\Log\Log.h" />
     <ClInclude Include="Core\Log\Logger.h" />
     <ClInclude Include="Core\Log\LoggerFactory.h" />
@@ -59,13 +81,36 @@
     <ClInclude Include="Core\ScreenManager.h" />
     <ClInclude Include="Core\SignalHandler.h" />
     <ClInclude Include="Core\SignalSender.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Core\Timer.h" />
     <ClInclude Include="Core\Updatable.h" />
     <ClInclude Include="Core\Utils\Exception.h" />
     <ClInclude Include="Core\Utils\OperatingSystem.h" />
+    <ClInclude Include="Core\Utils\Pointer.h" />
     <ClInclude Include="Core\Utils\Singleton.h" />
     <ClInclude Include="Core\Utils\StringUtils.h" />
+    <ClInclude Include="Core\Utils\VectorUtils.h" />
+    <ClInclude Include="Game\CommandFactory.h" />
+    <ClInclude Include="Game\Commands\GameOverCommand.h" />
+    <ClInclude Include="Game\Commands\PlayerCommand.h" />
+    <ClInclude Include="Game\Commands\QuitCommand.h" />
     <ClInclude Include="Game\Configuration.h" />
+    <ClInclude Include="Game\Console.h" />
+    <ClInclude Include="Game\Console\First.h" />
+    <ClInclude Include="Game\Console\Parser.h" />
+    <ClInclude Include="Game\Console\Token.h" />
+    <ClInclude Include="Game\Console\TokenFactory.h" />
     <ClInclude Include="Game\Constants.h" />
+    <ClInclude Include="Game\Elements\Bomb.h" />
+    <ClInclude Include="Game\Elements\Brick.h" />
+    <ClInclude Include="Game\Elements\Enemy.h" />
+    <ClInclude Include="Game\Elements\Explosion.h" />
+    <ClInclude Include="Game\Elements\Item.h" />
+    <ClInclude Include="Game\Elements\Player.h" />
+    <ClInclude Include="Game\Layers\ConsoleLayer.h" />
+    <ClInclude Include="Game\Map\TileMap.hpp" />
+    <ClInclude Include="Game\Map\TileMapBuilder.h" />
+    <ClInclude Include="Game\Signal.h" />
     <ClInclude Include="tinyxml2\tinyxml2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -146,7 +191,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32s.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32s.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

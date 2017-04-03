@@ -23,6 +23,21 @@
     <Filter Include="Core\Math">
       <UniqueIdentifier>{b79daf02-9137-442d-8191-ee971e5f3185}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Commands">
+      <UniqueIdentifier>{d0e0dd04-3bed-4b48-8c48-7e21c2f26f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Console">
+      <UniqueIdentifier>{1d8d7a4c-745c-4173-8101-06d3bfa6888c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Map">
+      <UniqueIdentifier>{5b0b7334-af16-4ae0-b4e8-d4ae3b78ec82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Elements">
+      <UniqueIdentifier>{de05ae0e-a9d3-402e-bffc-5053fa5a9331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Layers">
+      <UniqueIdentifier>{d0e18354-3475-4445-95f4-4c95f8bae7e1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game\main.cpp">
@@ -76,6 +91,66 @@
     <ClCompile Include="tinyxml2\tinyxml2.cpp">
       <Filter>tinyxml2</Filter>
     </ClCompile>
+    <ClCompile Include="Game\CommandFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Commands\GameOverCommand.cpp">
+      <Filter>Game\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Console.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Console\Token.cpp">
+      <Filter>Game\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Console\TokenFactory.cpp">
+      <Filter>Game\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Console\Parser.cpp">
+      <Filter>Game\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Console\First.cpp">
+      <Filter>Game\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Timer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Map\TileMap.cpp">
+      <Filter>Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Elements\Player.cpp">
+      <Filter>Game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Elements\Item.cpp">
+      <Filter>Game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Elements\Enemy.cpp">
+      <Filter>Game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Elements\Bomb.cpp">
+      <Filter>Game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Elements\Explosion.cpp">
+      <Filter>Game\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Commands\PlayerCommand.cpp">
+      <Filter>Game\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Texture.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Color.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Font.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Layers\ConsoleLayer.cpp">
+      <Filter>Game\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Signal.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Engine.h">
@@ -111,9 +186,6 @@
     <ClInclude Include="Core\Utils\StringUtils.h">
       <Filter>Core\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="Core\MainLoop.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="Core\CommandQueue.h">
       <Filter>Core</Filter>
     </ClInclude>
@@ -130,9 +202,6 @@
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="Core\LoopQuiter.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Core\Screen.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="Core\Math\Rectangle.h">
@@ -164,6 +233,87 @@
     </ClInclude>
     <ClInclude Include="tinyxml2\tinyxml2.h">
       <Filter>tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CommandFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Commands\QuitCommand.h">
+      <Filter>Game\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Commands\GameOverCommand.h">
+      <Filter>Game\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Console.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Console\Parser.h">
+      <Filter>Game\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Console\TokenFactory.h">
+      <Filter>Game\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Console\Token.h">
+      <Filter>Game\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Console\First.h">
+      <Filter>Game\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\Pointer.h">
+      <Filter>Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Timer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils\VectorUtils.h">
+      <Filter>Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\TileMapBuilder.h">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Player.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Item.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Enemy.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Bomb.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Brick.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\Explosion.h">
+      <Filter>Game\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Commands\PlayerCommand.h">
+      <Filter>Game\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\TileMap.hpp">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Screen.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MainLoop.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Signal.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Layers\ConsoleLayer.h">
+      <Filter>Game\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Texture.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Color.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Font.h">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

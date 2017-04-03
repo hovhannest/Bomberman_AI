@@ -2,6 +2,7 @@
 
 #include <memory>
 #include "ScreenComponent.h"
+#include "Math\Rectangle.h"
 
 namespace Bomberman {
 	class Rectangle;

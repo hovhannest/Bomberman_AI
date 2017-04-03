@@ -2,6 +2,7 @@
 
 #include <list>
 #include <memory>
+#include "Screen.h"
 
 namespace Bomberman {
 	class LoopQuiter;

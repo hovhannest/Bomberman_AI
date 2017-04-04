@@ -2,7 +2,7 @@
 
 #include <memory>
 #include <string>
-#include "..\Utils\Singleton.h"
+#include "../Utils/Singleton.h"
 
 namespace Bomberman {
 	class Logger;

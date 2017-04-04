@@ -1,10 +1,10 @@
 
 #include "Parser.h"
-#include "..\..\Core\Utils\Exception.h"
-#include "..\..\Core\Log\Log.h"
+#include "../../Core/Utils/Exception.h"
+#include "../../Core/Log/Log.h"
 #include "First.h"
-#include "..\CommandFactory.h"
-#include "..\..\Core\Utils\Pointer.h"
+#include "../CommandFactory.h"
+#include "../../Core/Utils/Pointer.h"
 
 using namespace std;
 

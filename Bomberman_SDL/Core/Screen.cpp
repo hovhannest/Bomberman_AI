@@ -7,8 +7,8 @@
 
 #include "SignalSender.h"
 #include "ScreenManager.h"
-#include "Log\LogLevel.h"
-#include "Log\Log.h"
+#include "Log/LogLevel.h"
+#include "Log/Log.h"
 #include "Drawable.h"
 #include "EventListener.h"
 #include "Updatable.h"

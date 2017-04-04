@@ -3,11 +3,11 @@
 
 #include <SDL.h>
 #include <SDL_image.h>
-#include "..\Game\Constants.h"
-#include "Utils\OperatingSystem.h"
+#include "../Game/Constants.h"
+#include "Utils/OperatingSystem.h"
 #include "Color.h"
-#include "Log\Log.h"
-#include "Log\LogLevel.h"
+#include "Log/Log.h"
+#include "Log/LogLevel.h"
 
 using namespace std;
 using namespace Bomberman::Constants;

@@ -2,7 +2,7 @@
 
 #include <memory>
 #include <string>
-#include "Console\Parser.h"
+#include "Console/Parser.h"
 
 namespace Bomberman {
 	class CommandFactory;

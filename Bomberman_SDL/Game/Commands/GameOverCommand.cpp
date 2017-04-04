@@ -1,7 +1,7 @@
 
 #include "GameOverCommand.h"
-#include "..\Console.h"
-#include "..\Map\TileMap.hpp"
+#include "../Console.h"
+#include "../Map/TileMap.hpp"
 
 using namespace std;
 

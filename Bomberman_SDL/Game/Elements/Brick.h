@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\..\Core\Math\Coordinate.h"
+#include "../../Core/Math/Coordinate.h"
 
 namespace Bomberman {
 	class Brick {

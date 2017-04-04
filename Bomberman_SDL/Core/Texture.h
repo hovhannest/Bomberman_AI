@@ -3,8 +3,8 @@
 #include <memory>
 #include <string>
 
-#include "Math\Coordinate.h"
-#include "Math\Rectangle.h"
+#include "Math/Coordinate.h"
+#include "Math/Rectangle.h"
 
 struct SDL_Renderer;
 struct SDL_Texture;

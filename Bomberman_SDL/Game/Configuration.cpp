@@ -1,9 +1,9 @@
 
 #include "Configuration.h"
-#include "..\tinyxml2\tinyxml2.h"
+#include "../tinyxml2/tinyxml2.h"
 #include "Constants.h"
-#include "..\Core\Log\Log.h"
-#include "..\Core\Log\LoggerFactory.h"
+#include "../Core/Log/Log.h"
+#include "../Core/Log/LoggerFactory.h"
 
 using namespace std;
 using namespace tinyxml2;

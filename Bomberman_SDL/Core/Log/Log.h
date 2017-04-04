@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "LogLevel.h"
-#include "..\Utils\Singleton.h"
+#include "../Utils/Singleton.h"
 
 namespace Bomberman {
 	class Logger;

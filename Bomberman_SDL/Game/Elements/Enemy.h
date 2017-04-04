@@ -2,8 +2,8 @@
 
 #include <memory>
 #include <string>
-#include "..\..\Core\Math\Coordinate.h"
-#include "..\..\Core\Timer.h"
+#include "../../Core/Math/Coordinate.h"
+#include "../../Core/Timer.h"
 
 namespace Bomberman {
 	class Player;

@@ -3,8 +3,8 @@
 
 #include <SDL.h>
 
-#include "Log\LogLevel.h"
-#include "Log\Log.h"
+#include "Log/LogLevel.h"
+#include "Log/Log.h"
 #include "LoopQuiter.h"
 #include "Screen.h"
 

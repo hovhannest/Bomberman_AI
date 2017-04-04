@@ -5,10 +5,10 @@
 #include <SDL_ttf.h>
 #include <sstream>
 
-#include "..\Game\Constants.h"
-#include "Utils\OperatingSystem.h"
-#include "Log\Log.h"
-#include "Log\LogLevel.h"
+#include "../Game/Constants.h"
+#include "Utils/OperatingSystem.h"
+#include "Log/Log.h"
+#include "Log/LogLevel.h"
 #include "Texture.h"
 
 using namespace Bomberman::Constants;

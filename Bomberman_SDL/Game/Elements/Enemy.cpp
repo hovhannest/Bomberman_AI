@@ -6,9 +6,9 @@
 #include <cstdlib>
 
 #include "Player.h"
-#include "..\Map\TileMap.hpp"
-#include "..\..\Core\Math\Random.h"
-#include "..\..\Core\Utils\VectorUtils.h"
+#include "../Map/TileMap.hpp"
+#include "../../Core/Math/Random.h"
+#include "../../Core/Utils/VectorUtils.h"
 
 using namespace std;
 

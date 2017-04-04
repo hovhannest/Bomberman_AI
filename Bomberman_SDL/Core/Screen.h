@@ -5,7 +5,7 @@
 #include <string>
 #include <list>
 
-#include "Math\Rectangle.h"
+#include "Math/Rectangle.h"
 
 union SDL_Event;
 struct SDL_Renderer;

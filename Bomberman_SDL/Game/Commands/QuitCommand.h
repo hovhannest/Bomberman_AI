@@ -1,7 +1,7 @@
 #pragma once
 
-#include "..\..\Core\Command.h"
-#include "..\..\Core\LoopQuiter.h"
+#include "../../Core/Command.h"
+#include "../../Core/LoopQuiter.h"
 
 #include <memory>
 

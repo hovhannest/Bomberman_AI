@@ -4,18 +4,18 @@
 #include <stack>
 
 #include "TileMapBuilder.h"
-#include "..\Constants.h"
-#include "..\..\tinyxml2\tinyxml2.h"
-#include "..\..\Core\Log\Log.h"
-#include "..\..\Core\Utils\Exception.h"
-#include "..\..\Core\Math\Coordinate.h"
-#include "..\..\Core\Utils\VectorUtils.h"
-#include "..\Elements\Player.h"
-#include "..\Elements\Brick.h"
-#include "..\Elements\Bomb.h"
-#include "..\Elements\Enemy.h"
-#include "..\Elements\Item.h"
-#include "..\Elements\Explosion.h"
+#include "../Constants.h"
+#include "../../tinyxml2/tinyxml2.h"
+#include "../../Core/Log/Log.h"
+#include "../../Core/Utils/Exception.h"
+#include "../../Core/Math/Coordinate.h"
+#include "../../Core/Utils/VectorUtils.h"
+#include "../Elements/Player.h"
+#include "../Elements/Brick.h"
+#include "../Elements/Bomb.h"
+#include "../Elements/Enemy.h"
+#include "../Elements/Item.h"
+#include "../Elements/Explosion.h"
 
 using namespace std;
 using namespace tinyxml2;

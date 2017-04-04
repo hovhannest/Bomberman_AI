@@ -12,10 +12,10 @@
 #include <time.h>
 #include <string>
 
-#include "Log\Log.h"
-#include "Utils\Exception.h"
-#include "..\Game\Constants.h"
-#include "Utils\OperatingSystem.h"
+#include "Log/Log.h"
+#include "Utils/Exception.h"
+#include "../Game/Constants.h"
+#include "Utils/OperatingSystem.h"
 
 Bomberman::Engine::Engine()
 {

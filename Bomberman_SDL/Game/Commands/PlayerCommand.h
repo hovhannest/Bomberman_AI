@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "..\..\Core\Command.h"
+#include "../../Core/Command.h"
 
 namespace Bomberman {
 	class Player;

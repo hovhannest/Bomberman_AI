@@ -2,10 +2,10 @@
 #include <iostream>
 #include <memory>
 
-#include "..\Core\Engine.h"
+#include "../Core/Engine.h"
 #include "Configuration.h"
-#include "..\Core\MainLoop.h"
-#include "..\Core\Screen.h"
+#include "../Core/MainLoop.h"
+#include "../Core/Screen.h"
 
 using namespace Bomberman;
 

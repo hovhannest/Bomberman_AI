@@ -1,6 +1,6 @@
 #pragma once
-#include "Log\Log.h"
-#include "Log\LogLevel.h"
+#include "Log/Log.h"
+#include "Log/LogLevel.h"
 
 namespace Bomberman {
     class LoopQuiter {

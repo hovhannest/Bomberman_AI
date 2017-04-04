@@ -1,0 +1,170 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		84F4285D1E939CEC002F9BD0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		84F4285E1E939CEC002F9BD0 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		84F4285F1E939CEC002F9BD0 /* appveyor.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = appveyor.yml; sourceTree = "<group>"; };
+		84F428601E939CEC002F9BD0 /* biicode.conf */ = {isa = PBXFileReference; lastKnownFileType = text; path = biicode.conf; sourceTree = "<group>"; };
+		84F428611E939CEC002F9BD0 /* cmake_uninstall.cmake.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = cmake_uninstall.cmake.in; sourceTree = "<group>"; };
+		84F428621E939CEC002F9BD0 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		84F428631E939CEC002F9BD0 /* contrib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = contrib; sourceTree = "<group>"; };
+		84F428641E939CEC002F9BD0 /* dox */ = {isa = PBXFileReference; lastKnownFileType = text; path = dox; sourceTree = "<group>"; };
+		84F428651E939CEC002F9BD0 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		84F428661E939CEC002F9BD0 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		84F428671E939CEC002F9BD0 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		84F428681E939CEC002F9BD0 /* setversion.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = setversion.py; sourceTree = "<group>"; };
+		84F428691E939CEC002F9BD0 /* tinyxml2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tinyxml2; sourceTree = "<group>"; };
+		84F4286A1E939CEC002F9BD0 /* tinyxml2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml2.cpp; sourceTree = "<group>"; };
+		84F4286B1E939CEC002F9BD0 /* tinyxml2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		84F4286C1E939CEC002F9BD0 /* tinyxml2.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = tinyxml2.pc.in; sourceTree = "<group>"; };
+		84F4286D1E939CEC002F9BD0 /* TinyXML2_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TinyXML2_small.png; sourceTree = "<group>"; };
+		84F4286E1E939CEC002F9BD0 /* xmltest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xmltest.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		84F428571E939CEC002F9BD0 = {
+			isa = PBXGroup;
+			children = (
+				84F4285D1E939CEC002F9BD0 /* .gitignore */,
+				84F4285E1E939CEC002F9BD0 /* .travis.yml */,
+				84F4285F1E939CEC002F9BD0 /* appveyor.yml */,
+				84F428601E939CEC002F9BD0 /* biicode.conf */,
+				84F428611E939CEC002F9BD0 /* cmake_uninstall.cmake.in */,
+				84F428621E939CEC002F9BD0 /* CMakeLists.txt */,
+				84F428631E939CEC002F9BD0 /* contrib */,
+				84F428641E939CEC002F9BD0 /* dox */,
+				84F428651E939CEC002F9BD0 /* Makefile */,
+				84F428661E939CEC002F9BD0 /* readme.md */,
+				84F428671E939CEC002F9BD0 /* resources */,
+				84F428681E939CEC002F9BD0 /* setversion.py */,
+				84F428691E939CEC002F9BD0 /* tinyxml2 */,
+				84F4286A1E939CEC002F9BD0 /* tinyxml2.cpp */,
+				84F4286B1E939CEC002F9BD0 /* tinyxml2.h */,
+				84F4286C1E939CEC002F9BD0 /* tinyxml2.pc.in */,
+				84F4286D1E939CEC002F9BD0 /* TinyXML2_small.png */,
+				84F4286E1E939CEC002F9BD0 /* xmltest.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		84F4285C1E939CEC002F9BD0 /* tinyxml2 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 84F4286F1E939CEC002F9BD0 /* Build configuration list for PBXLegacyTarget "tinyxml2" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/admin/Desktop/Bomberman_SDL/Bomberman_SDL/tinyxml2;
+			dependencies = (
+			);
+			name = tinyxml2;
+			passBuildSettingsInEnvironment = 1;
+			productName = tinyxml2;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		84F428581E939CEC002F9BD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 84F4285B1E939CEC002F9BD0 /* Build configuration list for PBXProject "tinyxml2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F428571E939CEC002F9BD0;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F4285C1E939CEC002F9BD0 /* tinyxml2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		84F428591E939CEC002F9BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		84F4285A1E939CEC002F9BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		84F428701E939CEC002F9BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tinyxml2;
+			};
+			name = Debug;
+		};
+		84F428711E939CEC002F9BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = tinyxml2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F4285B1E939CEC002F9BD0 /* Build configuration list for PBXProject "tinyxml2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F428591E939CEC002F9BD0 /* Debug */,
+				84F4285A1E939CEC002F9BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F4286F1E939CEC002F9BD0 /* Build configuration list for PBXLegacyTarget "tinyxml2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F428701E939CEC002F9BD0 /* Debug */,
+				84F428711E939CEC002F9BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F428581E939CEC002F9BD0 /* Project object */;
+}

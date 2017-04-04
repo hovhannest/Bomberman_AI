@@ -1,8 +1,8 @@
 
 #include "Player.h"
 #include "Item.h"
-#include "..\..\Core\Log\Log.h"
-#include "..\..\Core\Log\LogLevel.h"
+#include "../../Core/Log/Log.h"
+#include "../../Core/Log/LogLevel.h"
 
 namespace Bomberman {
 	const int Player::invincibleTime = 750;

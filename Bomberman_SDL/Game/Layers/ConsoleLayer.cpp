@@ -1,7 +1,7 @@
 
 #include "ConsoleLayer.h"
-#include "..\Signal.h"
-#include "..\..\Core\Log\LogLevel.h"
+#include "../Signal.h"
+#include "../../Core/Log/LogLevel.h"
 
 
 using namespace std;

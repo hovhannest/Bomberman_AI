@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Log.h"
 #include "Logger.h"
-#include "..\Utils\StringUtils.h"
+#include "../Utils/StringUtils.h"
 
 using namespace std;
 

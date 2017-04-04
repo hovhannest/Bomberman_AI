@@ -1,13 +1,13 @@
 
 #include "Console.h"
-#include "..\Core\Log\Log.h"
-#include "..\Core\Log\LogLevel.h"
-#include "..\Core\SignalSender.h"
+#include "../Core/Log/Log.h"
+#include "../Core/Log/LogLevel.h"
+#include "../Core/SignalSender.h"
 #include <SDL.h>
 #include "Signal.h"
-#include "Layers\ConsoleLayer.h"
-#include "..\Core\CommandQueue.h"
-#include "..\Core\Utils\Pointer.h"
+#include "Layers/ConsoleLayer.h"
+#include "../Core/CommandQueue.h"
+#include "../Core/Utils/Pointer.h"
 
 using namespace std;
 

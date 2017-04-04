@@ -4,7 +4,7 @@
 #include <queue>
 #include <set>
 
-#include "..\..\Core\Command.h"
+#include "../../Core/Command.h"
 #include "TokenFactory.h"
 
 namespace Bomberman {

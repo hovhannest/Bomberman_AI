@@ -3,13 +3,13 @@
 #include <deque>
 #include <SDL.h>
 
-#include "..\..\Core\Drawable.h"
-#include "..\..\Core\Updatable.h"
-#include "..\..\Core\SignalHandler.h"
-#include "..\..\Core\Log\Logger.h"
-#include "..\..\Core\Timer.h"
-#include "..\..\Core\Texture.h"
-#include "..\..\Core\Font.h"
+#include "../../Core/Drawable.h"
+#include "../../Core/Updatable.h"
+#include "../../Core/SignalHandler.h"
+#include "../../Core/Log/Logger.h"
+#include "../../Core/Timer.h"
+#include "../../Core/Texture.h"
+#include "../../Core/Font.h"
 
 namespace Bomberman {
 	class ConsoleLayer : public Drawable, public Updatable, public SignalHandler, public Logger {

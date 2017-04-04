@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-#include "..\Utils\Exception.h"
+#include "../Utils/Exception.h"
 #include "Logger.h"
 
 namespace Bomberman {

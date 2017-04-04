@@ -1,13 +1,13 @@
 
 #include "CommandFactory.h"
-#include "..\Core\Utils\Exception.h"
-#include "..\Core\Utils\StringUtils.h"
-#include "..\Core\LoopQuiter.h"
+#include "../Core/Utils/Exception.h"
+#include "../Core/Utils/StringUtils.h"
+#include "../Core/LoopQuiter.h"
 #include "Constants.h"
-#include "Commands\QuitCommand.h"
-#include "Commands\GameOverCommand.h"
-#include "Commands\PlayerCommand.h"
-#include "..\Core\Utils\Pointer.h"
+#include "Commands/QuitCommand.h"
+#include "Commands/GameOverCommand.h"
+#include "Commands/PlayerCommand.h"
+#include "../Core/Utils/Pointer.h"
 
 
 using namespace std;

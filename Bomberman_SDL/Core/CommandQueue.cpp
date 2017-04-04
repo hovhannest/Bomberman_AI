@@ -2,8 +2,8 @@
 #include "CommandQueue.h"
 
 #include "Command.h"
-#include "Log\Log.h"
-#include "Log\LogLevel.h"
+#include "Log/Log.h"
+#include "Log/LogLevel.h"
 
 using namespace std;
 

@@ -3,9 +3,9 @@
 #include "Matrix.h"
 
 #include <stack>
+#include "Coordinate.h"
 
 namespace Bomberman {
-	struct Coordinate;
 
 	class Transformer {
 	public:

@@ -55,7 +55,10 @@
     <ClCompile Include="Game\EventListeners\PlayerEvents.cpp" />
     <ClCompile Include="Game\Layers\ConsoleLayer.cpp" />
     <ClCompile Include="Game\main.cpp" />
+    <ClCompile Include="Game\MapSetter.cpp" />
+    <ClCompile Include="Game\Map\DummyTileMapBuilder.cpp" />
     <ClCompile Include="Game\Map\TileMap.cpp" />
+    <ClCompile Include="Game\Map\TxtTileMapLoader.cpp" />
     <ClCompile Include="Game\Signal.cpp" />
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
@@ -111,9 +114,13 @@
     <ClInclude Include="Game\Elements\Player.h" />
     <ClInclude Include="Game\EventListeners\ConsoleEvents.h" />
     <ClInclude Include="Game\EventListeners\PlayerEvents.h" />
+    <ClInclude Include="Game\InGameCommandQueue.h" />
     <ClInclude Include="Game\Layers\ConsoleLayer.h" />
+    <ClInclude Include="Game\MapSetter.h" />
+    <ClInclude Include="Game\Map\DummyTileMapBuilder.h" />
     <ClInclude Include="Game\Map\TileMap.hpp" />
     <ClInclude Include="Game\Map\TileMapBuilder.h" />
+    <ClInclude Include="Game\Map\TxtTileMapLoader.h" />
     <ClInclude Include="Game\Signal.h" />
     <ClInclude Include="tinyxml2\tinyxml2.h" />
   </ItemGroup>

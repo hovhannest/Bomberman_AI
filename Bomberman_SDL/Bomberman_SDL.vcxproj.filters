@@ -160,6 +160,15 @@
     <ClCompile Include="Game\EventListeners\PlayerEvents.cpp">
       <Filter>Game\EventListeners</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Map\TxtTileMapLoader.cpp">
+      <Filter>Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Map\DummyTileMapBuilder.cpp">
+      <Filter>Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MapSetter.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Engine.h">
@@ -329,6 +338,18 @@
     </ClInclude>
     <ClInclude Include="Game\EventListeners\PlayerEvents.h">
       <Filter>Game\EventListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\InGameCommandQueue.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\TxtTileMapLoader.h">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\DummyTileMapBuilder.h">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MapSetter.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

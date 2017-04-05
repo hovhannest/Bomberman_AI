@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "Random.h"
+#include "../Math/Random.h"
 
 namespace Bomberman {
 	namespace VectorUtils {

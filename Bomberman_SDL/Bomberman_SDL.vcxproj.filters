@@ -38,6 +38,9 @@
     <Filter Include="Game\Layers">
       <UniqueIdentifier>{d0e18354-3475-4445-95f4-4c95f8bae7e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\EventListeners">
+      <UniqueIdentifier>{bc69db9f-d564-46d7-83df-102b5f4259b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game\main.cpp">
@@ -150,6 +153,12 @@
     </ClCompile>
     <ClCompile Include="Game\Signal.cpp">
       <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EventListeners\ConsoleEvents.cpp">
+      <Filter>Game\EventListeners</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EventListeners\PlayerEvents.cpp">
+      <Filter>Game\EventListeners</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -314,6 +323,12 @@
     </ClInclude>
     <ClInclude Include="Core\Font.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EventListeners\ConsoleEvents.h">
+      <Filter>Game\EventListeners</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EventListeners\PlayerEvents.h">
+      <Filter>Game\EventListeners</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

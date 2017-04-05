@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bomberman_SDL", "Bomberman_SDL\Bomberman_SDL.vcxproj", "{A32CC002-A408-4733-BA23-80C6A36F1B27}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bomberman", "Bomberman_SDL\Bomberman_SDL.vcxproj", "{A32CC002-A408-4733-BA23-80C6A36F1B27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

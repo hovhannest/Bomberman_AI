@@ -5,7 +5,7 @@
 namespace Bomberman {
 	class Brick {
 	public:
-		Brick(Coordinate position, bool destructible = false) {}
+		Brick(Coordinate position, bool destructible = false) : _position(position), _destructible(destructible) {}
 
 		inline bool destructible() const {
 			return _destructible;

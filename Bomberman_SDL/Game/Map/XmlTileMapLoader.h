@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 
-#include "..\..\tinyxml2\tinyxml2.h"
+#include "../../tinyxml2/tinyxml2.h"
 
 
 namespace Bomberman {
@@ -26,6 +26,6 @@ namespace Bomberman {
 		std::string fileName;
 		tinyxml2::XMLDocument document;
 		bool _error;
-		std::shared_ptr<TileMapBuilder> builder;
+ 		std::shared_ptr<TileMapBuilder> builder;
 	};
 }

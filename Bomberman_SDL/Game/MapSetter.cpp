@@ -1,13 +1,15 @@
 
 #include "MapSetter.h"
 
-#include "Map/TileMap.hpp"
+#include "Map/TileMap.h"
 #include "../Core/Utils/OperatingSystem.h"
 #include "CommandFactory.h"
 #include "Map/TxtTileMapLoader.h"
 #include "../Core/Log/Log.h"
 #include "../Core/Log/LogLevel.h"
 #include "../Core/Utils/Pointer.h"
+#include "Layers/GameLayer.h"
+#include "Layers/HudLayer.h"
 
 using namespace std;
 

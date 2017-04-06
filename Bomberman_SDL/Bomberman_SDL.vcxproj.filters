@@ -136,9 +136,6 @@
     <ClCompile Include="Game\Elements\Explosion.cpp">
       <Filter>Game\Elements</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Commands\PlayerCommand.cpp">
-      <Filter>Game\Commands</Filter>
-    </ClCompile>
     <ClCompile Include="Core\Texture.cpp">
       <Filter>Core</Filter>
     </ClCompile>
@@ -167,6 +164,18 @@
       <Filter>Game\Map</Filter>
     </ClCompile>
     <ClCompile Include="Game\MapSetter.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Layers\GameLayer.cpp">
+      <Filter>Game\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Layers\HudLayer.cpp">
+      <Filter>Game\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Map\XmlTileMapLoader.cpp">
+      <Filter>Game\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Commands\PlayerCommand.cpp">
       <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
@@ -309,9 +318,6 @@
     <ClInclude Include="Game\Commands\PlayerCommand.h">
       <Filter>Game\Commands</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Map\TileMap.hpp">
-      <Filter>Game\Map</Filter>
-    </ClInclude>
     <ClInclude Include="Core\Screen.h">
       <Filter>Core</Filter>
     </ClInclude>
@@ -350,6 +356,18 @@
     </ClInclude>
     <ClInclude Include="Game\MapSetter.h">
       <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Layers\GameLayer.h">
+      <Filter>Game\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Layers\HudLayer.h">
+      <Filter>Game\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\XmlTileMapLoader.h">
+      <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Map\TileMap.h">
+      <Filter>Game\Map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

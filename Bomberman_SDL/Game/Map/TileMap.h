@@ -7,6 +7,7 @@
 
 #include "../../Core/Math/Rectangle.h"
 #include "../../Core/Timer.h"
+#include "../../Core/Math/Coordinate.h"
 
 
 namespace Bomberman {

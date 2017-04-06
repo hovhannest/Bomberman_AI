@@ -3,17 +3,12 @@
 
 #include <memory>
 #include <string>
-
-#include "../../Core/Utils/OperatingSystem.h"
-#include "../../Core/Log/Log.h"
-#include "../../Core/Log/LogLevel.h"
-#include "../../Core/Utils/Exception.h"
 #include "DummyTileMapBuilder.h"
-#include "../Elements/Player.h"
-#include "../../Core/Math/Coordinate.h"
-#include "../Elements/Brick.h"
-#include "TileMapBuilder.h"
-
+#include "../Elements/Item.h"
+#include "../../Core/Utils/OperatingSystem.h"
+#include "../../Core/Log/LogLevel.h"
+#include "../../Core/Log/Log.h"
+#include "../../Core/Utils/Exception.h"
 
 using namespace std;
 using namespace tinyxml2;
@@ -24,7 +19,7 @@ namespace Bomberman {
 	}
 
 	std::shared_ptr<TileMapBuilder> XmlTileMapLoader::load(std::string fileName) {
-		reset();
+ 		reset();
 
 		this->fileName = fileName;
 		string fullPath = getPath({ "maps" }, fileName);
@@ -57,10 +52,10 @@ namespace Bomberman {
 		fileName.clear();
 		document.Clear();
 		_error = false;
-		builder.reset(new DummyTileMapBuilder());
+		builder.reset(new DummyTileMapBuilder);
 	}
 
-	void XmlTileMapLoader::loadDimension(tinyxml2::XMLElement *root) {
+ 	void XmlTileMapLoader::loadDimension(tinyxml2::XMLElement *root) {
 		int width = 0;
 		int height = 0;
 

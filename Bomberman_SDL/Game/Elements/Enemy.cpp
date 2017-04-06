@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 #include "Player.h"
-#include "../Map/TileMap.hpp"
+#include "../Map/TileMap.h"
 #include "../../Core/Math/Random.h"
 #include "../../Core/Utils/VectorUtils.h"
 

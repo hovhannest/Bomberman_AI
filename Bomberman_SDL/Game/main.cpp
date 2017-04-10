@@ -17,12 +17,26 @@
 #include "../Core/ScreenManager.h"
 #include "../Core/Log/Log.h"
 #include "Console.h"
+#include "Elements/AIEvents.h"
+
+#include "SWI-cpp.h"
+#include "SWI-Prolog.h"
 
 using namespace Bomberman;
 using namespace std;
 
 int main(int argc, char* argv[])
 {
+	if (!PL_initialise(argc, argv))
+	{
+		PL_halt(1);
+		cout << "Error: Prolog cannot be initialized" << endl;
+	}
+	bool initAi = false;
+	if (argc > 1)
+	{
+		initAi = true;
+	}
 	try
 	{
 		Engine engine;
@@ -37,6 +51,7 @@ int main(int argc, char* argv[])
 		auto commandQueue = make_shared<InGameCommandQueue>();
 		auto consoleEvents = make_shared<ConsoleEvents>();
 		auto playerEvents = make_shared<PlayerEvents>();
+		auto aiEvents = make_shared<AIEvents>();
 		auto consoleLayer = make_shared<ConsoleLayer>();
 		auto gameLayer = make_shared<GameLayer>();
 		auto hudLayer = make_shared<HudLayer>();
@@ -46,6 +61,11 @@ int main(int argc, char* argv[])
 		playerEvents->setCommandFactory(commandFactory);
 		playerEvents->setCommandQueue(commandQueue);
 		gameLayer->setSignalSender(screen->getSignalSender());
+		if (initAi)
+		{
+			aiEvents->setCommandFactory(commandFactory);
+			aiEvents->setCommandQueue(commandQueue);
+		}
 
 		// Load everything
 		consoleLayer->load(screen->renderer());
@@ -63,6 +83,12 @@ int main(int argc, char* argv[])
 
 		screenManager->addEventListener(playerEvents);
 		screenManager->addSignalHandler(playerEvents);
+
+		if (initAi)
+		{
+			screenManager->addEventListener(aiEvents);
+			screenManager->addSignalHandler(aiEvents);
+		}
 
 		screenManager->addEventListener(gameLayer);
 		screenManager->addDrawable(gameLayer);

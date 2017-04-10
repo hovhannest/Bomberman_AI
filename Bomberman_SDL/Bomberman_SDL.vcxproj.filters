@@ -178,6 +178,9 @@
     <ClCompile Include="Game\Commands\PlayerCommand.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Elements\AIEvnts.cpp">
+      <Filter>Game\EventListeners</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Engine.h">
@@ -368,6 +371,9 @@
     </ClInclude>
     <ClInclude Include="Game\Map\TileMap.h">
       <Filter>Game\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Elements\AIEvents.h">
+      <Filter>Game\EventListeners</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

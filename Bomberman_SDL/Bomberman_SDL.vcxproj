@@ -46,6 +46,7 @@
     <ClCompile Include="Game\Console\Parser.cpp" />
     <ClCompile Include="Game\Console\Token.cpp" />
     <ClCompile Include="Game\Console\TokenFactory.cpp" />
+    <ClCompile Include="Game\Elements\AIEvnts.cpp" />
     <ClCompile Include="Game\Elements\Bomb.cpp" />
     <ClCompile Include="Game\Elements\Enemy.cpp" />
     <ClCompile Include="Game\Elements\Explosion.cpp" />
@@ -109,6 +110,7 @@
     <ClInclude Include="Game\Console\Token.h" />
     <ClInclude Include="Game\Console\TokenFactory.h" />
     <ClInclude Include="Game\Constants.h" />
+    <ClInclude Include="Game\Elements\AIEvents.h" />
     <ClInclude Include="Game\Elements\Bomb.h" />
     <ClInclude Include="Game\Elements\Brick.h" />
     <ClInclude Include="Game\Elements\Enemy.h" />
@@ -184,8 +186,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)\..\glew\include;$(SolutionDir)\..\SDL2_image\include;$(SolutionDir)\..\SDL2_ttf\include;$(SolutionDir)\..\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\..\glew\lib\Release\x64;$(SolutionDir)\..\SDL2\lib\x86;$(SolutionDir)\..\SDL2_ttf\lib\x86;$(SolutionDir)\..\SDL2_image\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\swipl\include;$(SolutionDir)\..\glew\include;$(SolutionDir)\..\SDL2_image\include;$(SolutionDir)\..\SDL2_ttf\include;$(SolutionDir)\..\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\swipl\lib;$(SolutionDir)\..\glew\lib\Release\x64;$(SolutionDir)\..\SDL2\lib\x86;$(SolutionDir)\..\SDL2_ttf\lib\x86;$(SolutionDir)\..\SDL2_image\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -209,7 +211,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32s.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;libswipl.lib;glew32s.lib;SDL2_ttf.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

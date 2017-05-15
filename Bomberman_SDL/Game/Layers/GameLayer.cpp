@@ -318,6 +318,12 @@ namespace Bomberman {
 		camera->setScreenSize(newSize);
 	}
 
+	void GameLayer::GetPleyerCoordinates(int &i, int &j)
+	{
+		i = tileMap->player()->position().i;
+		j = tileMap->player()->position().j;
+	}
+
 	void GameLayer::drawTile(Texture texture, Coordinate position) {
 		if (camera->insideCamera(position)) {
 			texture.position() = camera->getScreenPosition(position);

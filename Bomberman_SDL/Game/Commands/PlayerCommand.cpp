@@ -10,6 +10,7 @@
 #include "../../Core/Utils/Exception.h"
 #include "../Elements/Item.h"
 #include "../../Core/Utils/StringUtils.h"
+#include "../../AI/PrologHelper.h"
 
 Bomberman::PlayerCommand::PlayerCommand(std::shared_ptr<Player> player, std::shared_ptr<TileMap> tileMap, std::string command, std::vector<std::string> arguments)
 	: player(player), tileMap(tileMap), command(command), arguments(arguments)
@@ -108,7 +109,15 @@ void Bomberman::PlayerCommand::move()
 		return;
 	}
 
+	bool isNewPosition = false;
+	if (player->position().i != newPosition.i || player->position().j!= newPosition.j)
+	{
+		isNewPosition = true;
+	}
 	player->position() = newPosition;
+
+	if(isNewPosition)
+		PrologHelper::GetInstance()->SetAgentLocation(newPosition.i, newPosition.j);
 
 	if (error) {
 		Log::get() << "Invalid arguments for \"" << Bomberman::Constants::OBJ_PLAYER << "." << Bomberman::Constants::MSG_MOVE << "()\"" << LogLevel::error;
@@ -123,5 +132,7 @@ void Bomberman::PlayerCommand::setBomb()
 
 	if (tileMap->bombCount() < player->maxBombs() && !tileMap->tileHasBomb(player->position())) {
 		tileMap->addBomb(Bomb(player->position()));
+
+		PrologHelper::GetInstance()->SetBomb();
 	}
 }

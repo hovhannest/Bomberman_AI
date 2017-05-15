@@ -41,6 +41,9 @@
     <Filter Include="Game\EventListeners">
       <UniqueIdentifier>{bc69db9f-d564-46d7-83df-102b5f4259b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Prolog">
+      <UniqueIdentifier>{b9c22d96-97df-4648-921f-f8e656433ea2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game\main.cpp">
@@ -181,6 +184,7 @@
     <ClCompile Include="Game\Elements\AIEvnts.cpp">
       <Filter>Game\EventListeners</Filter>
     </ClCompile>
+    <ClCompile Include="AI\PrologHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Engine.h">
@@ -375,5 +379,6 @@
     <ClInclude Include="Game\Elements\AIEvents.h">
       <Filter>Game\EventListeners</Filter>
     </ClInclude>
+    <ClInclude Include="AI\PrologHelper.h" />
   </ItemGroup>
 </Project>

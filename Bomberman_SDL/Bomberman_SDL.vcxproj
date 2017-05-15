@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AI\PrologHelper.cpp" />
     <ClCompile Include="Core\Color.cpp" />
     <ClCompile Include="Core\CommandQueue.cpp" />
     <ClCompile Include="Core\Engine.cpp" />
@@ -67,6 +68,7 @@
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI\PrologHelper.h" />
     <ClInclude Include="Core\Color.h" />
     <ClInclude Include="Core\Command.h" />
     <ClInclude Include="Core\CommandQueue.h" />

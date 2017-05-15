@@ -16,6 +16,7 @@
 #include "../Elements/Enemy.h"
 #include "../Elements/Item.h"
 #include "../Elements/Explosion.h"
+#include "../../AI/PrologHelper.h"
 
 using namespace std;
 using namespace tinyxml2;
@@ -320,10 +321,13 @@ namespace Bomberman {
 
 			VectorUtils::removeIf(_bricks, [position](Brick& brick) {
 				return brick.destructible() && position == brick.position();
+			}, [position](Brick& brick) {
+				auto p = brick.position();
+				PrologHelper::GetInstance()->DeleteWall(p.i, p.j);
 			});
 
 			if (_player->position() == position && !_player->isDead() && !_player->isInvincible()) {
-				_player->die();
+				//_player->die();
 				playerRespawn.start();
 			}
 		}

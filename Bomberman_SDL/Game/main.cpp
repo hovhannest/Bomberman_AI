@@ -21,9 +21,14 @@
 
 #include "SWI-cpp.h"
 #include "SWI-Prolog.h"
+#include "../AI/PrologHelper.h"
 
 using namespace Bomberman;
 using namespace std;
+
+extern bool g_initAi;
+
+GameLayer g_Game;
 
 int main(int argc, char* argv[])
 {
@@ -32,10 +37,10 @@ int main(int argc, char* argv[])
 		PL_halt(1);
 		cout << "Error: Prolog cannot be initialized" << endl;
 	}
-	bool initAi = false;
+	g_initAi = false;
 	if (argc > 1)
 	{
-		initAi = true;
+		g_initAi = true;
 	}
 	try
 	{
@@ -56,12 +61,15 @@ int main(int argc, char* argv[])
 		auto gameLayer = make_shared<GameLayer>();
 		auto hudLayer = make_shared<HudLayer>();
 
+		playerEvents->GameLayer(gameLayer);
+		PrologHelper::GetInstance()->GameLayer(gameLayer);
+
 		// Initialize all the screen components
 		consoleEvents->setConsole(console);
 		playerEvents->setCommandFactory(commandFactory);
 		playerEvents->setCommandQueue(commandQueue);
 		gameLayer->setSignalSender(screen->getSignalSender());
-		if (initAi)
+		if (g_initAi)
 		{
 			aiEvents->setCommandFactory(commandFactory);
 			aiEvents->setCommandQueue(commandQueue);
@@ -84,7 +92,7 @@ int main(int argc, char* argv[])
 		screenManager->addEventListener(playerEvents);
 		screenManager->addSignalHandler(playerEvents);
 
-		if (initAi)
+		if (g_initAi)
 		{
 			screenManager->addEventListener(aiEvents);
 			screenManager->addSignalHandler(aiEvents);

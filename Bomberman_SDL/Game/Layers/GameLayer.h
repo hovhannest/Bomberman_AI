@@ -34,7 +34,7 @@ namespace Bomberman {
 		void setTileMap(std::shared_ptr<TileMap> tileMap);
 
 		void screenSizeChanged(Rectangle previousSize, Rectangle newSize);
-
+		void GetPleyerCoordinates(int &i, int &j);
 	private:
 		class Camera;
 

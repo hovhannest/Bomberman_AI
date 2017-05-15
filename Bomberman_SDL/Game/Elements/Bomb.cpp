@@ -1,5 +1,6 @@
 
 #include "Bomb.h"
+#include "..\..\AI\PrologHelper.h"
 
 namespace Bomberman {
 	const int Bomb::TTL = 3000;
@@ -23,6 +24,10 @@ namespace Bomberman {
 		else if (timer.getTime() >= TTL) {
 			_exploded = true;
 			timer.stop();
+		}
+		if (_exploded)
+		{
+			PrologHelper::GetInstance()->Explode(getPosition().i, getPosition().j);
 		}
 	}
 

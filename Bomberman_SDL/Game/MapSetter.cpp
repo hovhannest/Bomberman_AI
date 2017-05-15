@@ -11,6 +11,9 @@
 #include "Layers/GameLayer.h"
 #include "Layers/HudLayer.h"
 
+#include <iostream>
+#include "Elements/Brick.h"
+
 using namespace std;
 
 namespace Bomberman {
@@ -33,6 +36,15 @@ namespace Bomberman {
 
 		if (mapLoader) {
 			result = make_shared<TileMap>(mapLoader);
+		}
+
+		auto br = result->bricks();
+		for (auto it = br.begin(); it != br.end(); it++)
+		{
+			if ((*it).position().i < 20 && (*it).position().j < 20)
+			{
+				cout << (*it).position().i << ", " << (*it).position().j << " , " << (*it).destructible() << endl;
+			}
 		}
 
 		return result;

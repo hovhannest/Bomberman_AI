@@ -33,17 +33,6 @@ namespace Bomberman {
 
 	AIEvents::AIEvents()
 	{
-		predicate_t hello;
-		term_t t0 = NULL;
-
-		long n = 5;
-		int rval;
-
-		PL_put_integer(t0, n);
-
-		hello = PL_predicate("hello", 1, NULL);
-
-		rval = PL_call_predicate(NULL, PL_Q_NORMAL, hello, t0);
 	}
 
 	void AIEvents::listenEvent(SDL_Event event)

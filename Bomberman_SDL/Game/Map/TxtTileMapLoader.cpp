@@ -17,6 +17,7 @@
 #include "../Elements/Player.h"
 #include "../Elements/Brick.h"
 #include "../Elements/Item.h"
+#include "../../AI/PrologHelper.h"
 
 using namespace std;
 using namespace Bomberman::Constants;
@@ -222,6 +223,7 @@ namespace Bomberman {
 			}
 
 			builder->_player = player;
+			PrologHelper::GetInstance()->AgentLocation(player->position().i, player->position().j);
 		}
 		else if (command == MAP_CMD_SIZE) {
 			Coordinate coordinate;
@@ -232,6 +234,8 @@ namespace Bomberman {
 
 			builder->_width = coordinate.i;
 			builder->_height = coordinate.j;
+			
+			PrologHelper::GetInstance()->Init(coordinate.i, coordinate.j);
 		}
 		else if (command == MAP_CMD_SINGLE) {
 			Coordinate coordinate;
@@ -242,9 +246,11 @@ namespace Bomberman {
 
 			if (arguments[0] == MAP_OBJ_COMMON_BRICK) {
 				builder->_bricks.push_back(Brick(coordinate));
+				PrologHelper::GetInstance()->AddUndestructableWall(coordinate.i, coordinate.j);
 			}
 			else if (arguments[0] == MAP_OBJ_DESTRUCT_BRICK) {
 				builder->_bricks.push_back(Brick(coordinate, true));
+				PrologHelper::GetInstance()->AddDestructableWall(coordinate.i, coordinate.j);
 			}
 			else {
 				return false;
@@ -283,6 +289,14 @@ namespace Bomberman {
 			for (pos.i = start.i; pos.i <= end.i; ++pos.i) {
 				for (pos.j = start.j; pos.j <= end.j; ++pos.j) {
 					builder->_bricks.push_back(Brick(pos, destructible));
+					if (destructible)
+					{
+						PrologHelper::GetInstance()->AddDestructableWall(pos.i, pos.j);
+					}
+					else
+					{
+						PrologHelper::GetInstance()->AddUndestructableWall(pos.i, pos.j);
+					}
 				}
 			}
 		}
@@ -380,6 +394,7 @@ namespace Bomberman {
 			if (!buildCoordinate(arguments[0], arguments[1], builder->doorPosition)) {
 				return false;
 			}
+			PrologHelper::GetInstance()->AddClosedDoor(builder->doorPosition.i, builder->doorPosition.j);
 		}
 		else {
 			return false;
